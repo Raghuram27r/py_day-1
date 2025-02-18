@@ -126,6 +126,7 @@
 #         next_year += 1
 
 # year = int(input("Enter a year: "))
+
 # prev_year, next_year = year - 1, year + 1
 
 # while not ((next_year % 4 == 0 and next_year % 100 != 0) or (next_year % 400 == 0) or (prev_year % 4 == 0 and prev_year % 100 != 0) or (prev_year % 400 == 0)):
@@ -210,3 +211,93 @@
 #  print nth fibnocci number 
 # print non-fibnocci numbers  in  given range  -(1 to 100) 
 # reverse a num  in  negative numbers
+# write a program to print numbers from  -1 to -10
+# def print_numbers():
+#     for num in range(-1, -11, -1):
+#         print(num)
+# print_numbers()
+
+# sum of digits in a number  - and add when it is even 
+# def sum_of_digits(number):
+#     num_str = str(number)
+#     total_sum = 0
+#     for i in num_str:
+#         total_sum += int(i)
+#     if total_sum % 2 == 0:
+#         return total_sum
+#     else:
+#         return "The sum of the digits is not even."
+# number = 1234
+# result = sum_of_digits(number)
+# print("Sum of digits:", result)
+
+# prime number or not prime
+# num1 = int(input("enter lower - "))
+# num2 = int(input("enter upper - "))
+
+# for p in range(num1,num2 + 1):
+#     count = 0
+#     for i in range(1,p + 1):
+#         if p % i == 0:
+#             count += 1
+#     if count == 2:
+#         print(p,"is a prime")  
+    # else:
+    #      print(p,"is Not a prime")
+ 
+# range of numbers - check prime or not in  certain range of numbers 
+
+# write a program to print sum of non-primes  digits in a given number  - 3437 => 3,3,7 =>13
+# write a program to print max prime digit in a certain number  912780 =>2,7 => max - 7 
+# def is_prime(num):
+#     if num < 2:
+#         return False
+#     for i in range(2, int(num ** 0.5) + 1):
+#         if num % i == 0:
+#             return False
+#     return True
+# res = is_prime()
+# print(res)
+
+# n = input()  
+# sum_primes = 0
+
+# for digit in n:
+#     if digit.isdigit():
+#         num = int(digit)
+#         if is_prime(num):  
+#             sum_primes += num
+# print(f"Sum of prime digits: {sum_primes} ")
+
+# compare first digit and last digit in a number  (print equal - if there are  equal )
+#  print nth fibnocci number 
+# print non-fibnocci numbers  in  given range  -(1 to 100) 
+# reverse a num  in  negative numbers
+# 17/02/2025
+# 1) sum of elements in a list
+# list = list(map(int,input().split()))
+# print(sum(list))
+
+# 2)Finding the k Element which is present in a List.
+# list1 = list(map(int, input().split()))  
+# k = int(input())  
+# print(list1[k])
+
+# 6)Wap to check if each number in an  list contains duplicate digits, returning true for duplicates and false for unique digits.
+# numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+# result = []
+
+# for num in numbers:
+#     num_str = str(num)  
+#     if len(num_str) != len(set(num_str)):  
+#         result.append(True)  
+#     else:
+#         result.append(False)  
+# print(result)
+
+# 15)reverse an array
+# list = list(map(int,input().split()))
+# print(list[::-1])
+# list = list(map(int,input().split()))
+# list.reverse()
+# print(list)
