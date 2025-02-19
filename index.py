@@ -302,6 +302,8 @@
 # list.reverse()
 # print(list)
 
+# 18-02-2024
+# ------------
 def sum_of_digits(arr):
 #     result = []
 #     for num in arr:
